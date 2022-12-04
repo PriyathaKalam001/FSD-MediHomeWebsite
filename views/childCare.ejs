@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html>
+   
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+           
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+           
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+           
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+</head>
+   <style>
+    body {
+        background-size: cover;
+        background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjMzMy1uaW5nLTQ4LW1lZGljYWxfMi5qcGc.jpg?s=4HrbtHg0mvHvWVU-9Kl-VlkvuZo3J1A4kEU9hY9lerw);
+    }
+
+    nav {
+        width: 100%;
+        height: 100px;
+        background-color: darkcyan;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        padding: 0px 20px;
+        font-size:large;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .profile {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    
+
+    .box {
+        /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+        border-width: 2px;
+        border-style: solid;
+        border-color: darkcyan;
+        margin: 20px;
+        height: 500px;
+        width: 450px;
+        background-color: azure;
+    }
+
+    .Medicine-Img {
+        height: 200px;
+        width: 250px;
+    }
+
+    .addtoCartButton {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: -20px 50px;
+        width: 250px;
+        height:30px;
+        border-radius: 10px;
+        font-size:15px;
+    }
+
+    .cost {
+        color: rgb(236, 20, 103);
+        
+    }
+    input{
+        border:none;
+        background-color:azure;
+    }
+    .highlights {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    nav a:hover {
+        color: #111;
+        text-decoration: none;
+    }
+
+    .navbar :hover img {
+        transform: scale(1.5);
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .searchBar {
+        padding-left: 20px;
+    }
+
+    .searchImg {
+        height: 20px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .but {
+        height: 30px;
+        width: 40px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .cart {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    #fit:hover {
+        width: 330px;
+        height: 230px;
+    }
+    #btnFit:hover{
+        width:300px;
+        height:45px;
+    }
+    .box:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(12, 12, 12, 0.4);
+        border-width:5px;
+        border-radius:25px;
+
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color:black;
+    }
+    .carousel-indicators {
+        bottom: -50px;
+    }
+    .carousel-indicators .active{
+        background-color:darkcyan;
+    }
+    </style>
+    <body>
+        <nav>
+            <img class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcu9qq4T_Y84rSt1ya08ApyOQ2UFgA5VWFuA&usqp=CAU">
+            <center><b class="title">MediHome</b>.com</center>
+            <div class="navbar">
+                <img class="profile" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrb7XeVpElaj3yF0M2zBadpBwR1H32HQQumw&usqp=CAU">
+                <a href='/userMainPage'>Home</a>
+                <div class="dropdown-menu" aria-labelledby="profile">
+                    <a class="dropdown-item" href="#">Username : <%= data.firstname %>&nbsp;<%= data.LastName %></a>
+                    <a class="dropdown-item" href="#">Email : <%= data.email %></a>
+                    <a class="dropdown-item" href="#">Phone Number : <%= data.phoneNumber %></a>
+                </div>
+                <a href="/aboutPage">About</a>
+                <a href="/bpcalculator">BP Status</a>
+                <a href="/cartPage"><img class="cart"
+                        src="https://www.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg"></a>
+            </div>
+        </nav>
+        <br>
+        <br>
+    <div id="carouselpage" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators" style="color:#111;">
+            <li data-target="#carouselpage" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselpage" data-slide-to="1"></li>
+            <li data-target="#carouselpage" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="justify-content-center box">
+                        <center>
+                            <h1>Benadryl Cough Syrup For kids</h1><br>
+                            <img src="https://newassets.apollo247.com/pub/media/catalog/product/b/e/ben0006.jpg" class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>cough syrup</p>
+                        <form method='GET' action='/addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="129.00"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Benadryl Cough Syrup For kids" class="btn btn-primary addtoCartButton" id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                    <div class="justify-content-center box">
+                        <center>
+                            <h1>Kritfeen P Syrup</h1><br>
+                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT-P8McRJJuKhTGECnWzCxx25V-izlWiKMPHRxKv3eENVOt9apkhgJJrbH9lHJQ9olUd1o-NByQQNNVZ3UyeGTIoS3_RlKsTraTpA4mzQnIbozzdAq5NTqp1Q&usqp=CAE"
+                                class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Treatment of Fever</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="55.00"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Kritfeen P Syrup" class="btn btn-primary addtoCartButton" id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                         
+                    </div>
+                    <div class="justify-content-center box">
+                        <center>
+                            <h1>Allopthic Cough Syrup Kids</h1><br>
+                            <img src="https://5.imimg.com/data5/BK/FL/OC/SELLER-11366797/img-20200117-170938-1000x1000.jpg"
+                                class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Cough syrup</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="66.00"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Allopthic Cough Syrup Kids" class="btn btn-primary addtoCartButton" id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div  class="d-flex flex-row justify-content-center">
+                    <div class="justify-content-center box ">
+                        <center>
+                            <h1>Mucolite Syrup 100 ml</h1><br>
+                            <img src="https://newassets.apollo247.com/pub/media/catalog/product/m/u/muc0014_1.jpg"
+                                class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Chronic respiratory diseases</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="96.47"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Mucolite Syrup 100 ml" class="btn btn-primary addtoCartButton"
+                                    id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                    <div class="justify-content-center box">
+                        <center>
+                            <h1>Child Grow Syrup 200ml</h1><br>
+                            <img src="https://5.imimg.com/data5/UU/IU/HC/SELLER-29245277/child-grow-syrup-500x500.jpg" class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Growth</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="135.00"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Child Grow Syrup 200ml" class="btn btn-primary addtoCartButton"
+                                    id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                    <div class="justify-content-center box">
+                        <center>
+                            <h1>Appetite Stimulant Syrup</h1><br>
+                            <img src="https://m.media-amazon.com/images/I/41aOlc2vdtL.jpg" class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Increases Hunger</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="170.00"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Appetite Stimulant Syrup" class="btn btn-primary addtoCartButton"
+                                    id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="justify-content-center box ">
+                        <center>
+                            <h1>Cyclopam Suspension</h1><br>
+                            <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/x19pq5vanmqvrfieopry.jpg"
+                                class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Stomach pain</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="93.70"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Cyclopam Suspension" class="btn btn-primary addtoCartButton"
+                                    id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                    <div class="justify-content-center box">
+                        <center>
+                            <h1>Meftal P Suspension</h1><br>
+                            <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/mytaofbsndq4tkgob0bm.jpg"
+                                class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Fever</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="36.50"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="Meftal P Suspension" class="btn btn-primary addtoCartButton"
+                                    id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                    <div class="justify-content-center box">
+                        <center>
+                            <h1>ZenMulti Drops</h1><br>
+                            <img src="https://m.media-amazon.com/images/I/81+jpcX9mYL._SX679_.jpg"
+                                class="Medicine-Img" />
+                        </center><br>
+                        <p class="highlights"><b>Usage : </b>Multivitamin syrup</p>
+                        <form method='GET' action='addtoCart'>
+                            <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number"
+                                        style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="95.00"></b></p>
+                            <br><br>
+                            <center><button name="Tabletname" value="ZenMulti Drops"
+                                    class="btn btn-primary addtoCartButton" id="btnFit">Add
+                                    to Cart</button></center>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <a class="carousel-control left" href="#carouselpage" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#carouselpage" data-slide="next">&rsaquo;</a>    
+        
+    </div>
+    </body>    
+</html>

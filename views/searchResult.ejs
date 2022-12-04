@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+            
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+            
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+            
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+    </head>
+    <style>
+        body {
+            background-size: cover;
+            background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjMzMy1uaW5nLTQ4LW1lZGljYWxfMi5qcGc.jpg?s=4HrbtHg0mvHvWVU-9Kl-VlkvuZo3J1A4kEU9hY9lerw);
+        }
+        nav {
+            width: 100%;
+            height: 100px;
+            background-color: darkcyan;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .profile {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .Medicine-Img {
+            height: 300px;
+            width: 300px;
+        }
+        .addtoCartButton {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: -20px 50px;
+            width: 330px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        .cost {
+            color: rgb(236, 20, 103);
+        }
+        .highlights {
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        nav a:hover {
+            color: #111;
+            text-decoration:none;
+        }
+        .navbar :hover img {
+            transform: scale(1.5);
+        }
+        .logo {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .title {
+            font-size: 60px;
+        }
+        .cart {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+        #btnFit:hover{
+            width:350px;
+            height:55px;
+        }
+        input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+            background-color: azure;
+        }
+        .logoutImg{
+            height : 50px;
+            width : 50px;
+            border-radius: 50%;
+        }
+        .tabletImage{
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+        .tabletInfo{
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 100px;
+        }
+        
+    </style>
+    <body>
+        <nav>
+            <img class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcu9qq4T_Y84rSt1ya08ApyOQ2UFgA5VWFuA&usqp=CAU">
+            <center><b class="title">MediHome</b>.com</center>
+            <div class="navbar">
+                <img class="profile" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrb7XeVpElaj3yF0M2zBadpBwR1H32HQQumw&usqp=CAU">
+                <a href='/userMainPage'>Home</a>
+                <div class="dropdown-menu" aria-labelledby="profile">
+                    <a class="dropdown-item" href="#">Username : <%= data.firstname %>&nbsp;<%= data.lastname %></a>
+                    <a class="dropdown-item" href="#">Email : <%= data.email %></a>
+                    <a class="dropdown-item" href="#">Phone Number : <%= data.phoneNumber %></a>
+                    <a class="dropdown-item logout" href="/homepage">Logout&nbsp;&nbsp;&nbsp;&nbsp;<img class="logoutImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQiJs3my7SnzIOL3oCd0ayUgCXTz5Cle4ZwQ&usqp=CAU"/></a>
+                </div>
+                <a href="/aboutPage">About</a>
+                <a href="/cartPage"><img class="cart" src="https://www.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg"></a>
+            </div>
+        </nav>
+        <div class="d-flex flex-row">
+            <div class="tabletImage">  
+                <img src="<%= data.tabletImg%>" class="Medicine-Img"/>
+            </div>  
+            <div class="tabletInfo">
+                <b class="details">Tablet Name : </b><%=data.tabletName%><br><br>
+                <b class="details">Usage : </b><%=data.tabletUsage%><br><br>
+                <form method='GET' action='addtoCart'>
+                <b class="details">Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold;width:100px" name="cost" value="<%=data.cost%>"></b><br><br>
+                <b class="details">Side effects : </b><%=data.sideEffects%><br><br><br>
+                    <button name="Tabletname" value="<%=data.tabletName%>" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

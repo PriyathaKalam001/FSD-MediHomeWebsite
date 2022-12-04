@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <title>MediHome</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            body {
+                background-size: cover;
+                background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjMzMy1uaW5nLTQ4LW1lZGljYWxfMi5qcGc.jpg?s=4HrbtHg0mvHvWVU-9Kl-VlkvuZo3J1A4kEU9hY9lerw);
+            }
+            .title {
+                font-size: 60px;
+            }
+            .cart {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+            .logo {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+            }
+
+            .profile {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+            nav {
+                width: 100%;
+                height: 100px;
+                background-color: darkcyan;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+            }
+            nav a:hover {
+                color: #111;
+                text-decoration:none;
+            }
+            .navbar :hover img {
+                transform: scale(1.5);
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            .cost{
+                color : rgb(236, 20, 103);
+                font-size: 50px;
+            }
+            .bg{
+                margin-left:5%;
+                margin-top:5%;
+            }
+            .radioText{
+                font-size:30px;
+            }
+            input[type='radio']{
+                transform:scale(2);
+            }
+            .pinInput{
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: hidden;
+                font-size: 30px;
+                background-color: rgb(124, 223, 223);
+            }
+            h1{
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcu9qq4T_Y84rSt1ya08ApyOQ2UFgA5VWFuA&usqp=CAU">
+            <center><b class="title">MediHome</b>.com</center>
+            <div class="navbar">
+                <img class="profile" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrb7XeVpElaj3yF0M2zBadpBwR1H32HQQumw&usqp=CAU">
+                <a href='/userMainPage'>Home</a>
+                <div class="dropdown-menu" aria-labelledby="profile">
+                    <a class="dropdown-item" href="#">Username : <%= data.firstname %><%= data.lastname %></a>
+                    <a class="dropdown-item" href="#">Email : <%= data.email %></a>
+                    <a class="dropdown-item" href="#">Phone Number : <%= data.phoneNumber %></a>
+                </div>
+                <!-- <a href="#">Contact Us</a> -->
+                <a href="/aboutPage">About</a>
+                <a href="/cartPage"><img class="cart" src="https://www.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg"></a>
+            </div>
+        </nav>
+        <br><br>
+        <center><h1>Payment Process</h1></center>
+        <div class="bg">
+        <% var totalCost =data.cost%>
+        <h2>Total cost:<b style="color:rgb(236, 20, 103);">Rs.<%= totalCost.toFixed(2) %>/-</b></h2><br>
+        <h2>Select Payment Mode :</h2><br>
+            <input type="radio" name="payment" value="Cash on delivery(Enter amount)" onclick="myFunction(this.value)"><b class="radioText">&nbsp;&nbsp;Cash on delivery</b><br>
+            <input type="radio" name="payment" value="Enter UPI number" onclick="myFunction(this.value)"><b class="radioText">&nbsp;&nbsp;UPI</b><br>
+            <input type="radio" name="payment" value="Enter credit card number" onclick="myFunction(this.value)"><b class="radioText">&nbsp;&nbsp;Net Banking</b><br><br>
+            <!-- <button onclick="myFunction()">Proceed</button> -->
+        <form action="/finalPage" method="get">
+                <input class="pinInput" type="text" style="width:450px; height:50px" placeholder="Payment mode" id="result" required> &nbsp; : &nbsp;
+                <input type="text" style="width:300px; height:50px" name="pinNum" required/><br><br>
+            <button class="btn btn-primary">Place Order</button>
+        </form>
+        </div>
+    </body>
+    <script>
+        function myFunction(payment) {
+            document.getElementById("result").value = payment;
+        }
+    </script>
+</html>

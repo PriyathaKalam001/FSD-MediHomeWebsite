@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <title>Navbar</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            body {
+                background-size: cover;
+                background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjMzMy1uaW5nLTQ4LW1lZGljYWxfMi5qcGc.jpg?s=4HrbtHg0mvHvWVU-9Kl-VlkvuZo3J1A4kEU9hY9lerw);
+            }
+            .title {
+                font-size: 60px;
+            }
+            .cart {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+            .logo {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+            }
+
+            .profile {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+            nav {
+                width: 100%;
+                height: 100px;
+                background-color: darkcyan;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+            }
+            nav a:hover {
+                color: #111;
+                text-decoration:none;
+            }
+            .navbar :hover img {
+                transform: scale(1.5);
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            table, th, td{
+                border : 1px solid black;
+                border-collapse: collapse;
+            }
+            th{
+                background-color: darkcyan;
+            }
+            th, tr{
+                font-size: xx-large;
+            }
+            .tableCap{
+                font-size: 50px;
+            }
+            .cost{
+                color : rgb(236, 20, 103);
+                font-size: 50px;
+            }
+            .totalText{
+                font-size: 50px;
+                /* padding-left: 700px; */
+            }
+            .emptyCart{
+                color : rgb(236, 20, 103);
+                font-size: 50px;
+            }
+            .cartImg{
+                height : 400px;
+                width : 400px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcu9qq4T_Y84rSt1ya08ApyOQ2UFgA5VWFuA&usqp=CAU">
+            <center><b class="title">MediHome</b>.com</center>
+            <div class="navbar">
+                <img class="profile" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrb7XeVpElaj3yF0M2zBadpBwR1H32HQQumw&usqp=CAU">
+                <a href='/userMainPage'>Home</a>
+                <div class="dropdown-menu" aria-labelledby="profile">
+                    <a class="dropdown-item" href="#">Username : <%= data.firstname %><%= data.lastname %></a>
+                    <a class="dropdown-item" href="#">Email : <%= data.email %></a>
+                    <a class="dropdown-item" href="#">Phone Number : <%= data.phoneNumber %></a>
+                </div>
+                <!-- <a href="#">Contact Us</a> -->
+                <a href="/aboutPage">About</a>
+                <a href="/cartPage"><img class="cart"
+                        src="https://www.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg"></a>
+            </div>
+        </nav>
+        <center><b class="tableCap">Your Cart : </b></center><br>
+        <% var totalCost = 0 %>
+        <% var cartItems = data.length %>
+        <%=cartItems%>
+        <% if(cartItems == 0){ %>
+            <center><img class = "cartImg" src="https://www.nicepng.com/png/detail/117-1170307_shopping-cart-someone-pushing-a-cart.png"/></center>
+            <div class="emptyCart">
+                <center><b>Oops... Your cart is empty!</b></center>
+            </div>
+        <% }
+        else{ %>
+            <center>
+                <table border = 5px height="45%" width="70%">
+                    <th>&nbsp;S No.</th>
+                    <th>&nbsp;Tablet name</th>
+                    <th>&nbsp;Cost</th>
+                    <% for(var i=0;i<data.length;i++){ %>
+                        <tr>
+                            <td>&nbsp;<%=(i+1)%></td><td>&nbsp;<%= data[i].item %> </td><td>&nbsp;<%= data[i].cost %></td>
+                            
+                        </tr>
+                            <% totalCost += Number(data[i].cost) %>
+                    <% }%>
+                </table>
+                <center><b class="totalText">Total Cost : </b> <b class="cost">Rs.<%= totalCost.toFixed(2) %> </b></center>
+                <br>
+                <a href="/paymentPage"><button class="btn btn-primary paymentBtn">Place Order</button></a>
+            </center>
+        <% } %>
+        <!-- <button onClick="display('sectionPayment')" class="paymentBtn">Place Order</button> -->
+    </body>
+</html>
