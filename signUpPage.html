@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Signup page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-image: url("https://vistapointe.net/images/medicine-5.jpg");
+                background-size: cover;
+            }
+            .signUp-heading{
+                font-family:"Bree Serif";
+            }
+            .signUpBox{
+                /* text-align:center; */
+                padding-left:20px;
+                padding-top:20px;
+                margin-left:550px;
+                margin-right:550px;
+                margin-top:50px;
+                border-radius: 5px;
+                border-style: solid;
+            }
+            .signUp-button{
+                /* margin:20px 20px; */
+                width:300px;
+            }
+            button:hover{
+                width:350px;
+                height:50px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+            <div class="signUpBox">
+                <div class = "sign">
+                    <form method="get" action="/signupsubmit">
+                    <h1 class="signUp-heading">SignUp</h1>
+                    <p>Enter your details</p><br>
+                    <b>First Name:</b><br>
+                    <input type="text" name="firstName" placeholder="First Name" required><br><br>
+                    <b>Last Name:</b><br>
+                    <input type="text" name="lastName" placeholder="Last Name" required><br><br>
+                    <b>Email:</b><br>
+                    <input type="email" name="email" placeholder="Email" required><br><br>
+                    <b>Mobile Number:</b><br>
+                    <input type="number" name="phno" placeholder="Mobile Number" required><br><br>
+                    <b>Date Of Birth:</b><br>
+                    <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+                    <b>Gender:</b><br>
+                    <input type="radio" name="gender">female<br>
+                    <input type="radio" name="gender">male<br>
+                    <input type="radio" name="gender">prefer not to say<br><br>
+                    <b>Address:</b><br>
+                    <textarea name = "add" required></textarea><br><br>
+                    <b>Password:</b><br>
+                    <input type="password" name="password" required><br><br>
+                    <b>Confirm Password:</b><br>
+                    <input type="password" name="confirmpassword" required><br><br>
+                    <button onClick="sigupInfo(form)" class="btn btn-info signUp-button">Sign Up</button><br><br>
+                    <!-- <input type="submit" value="submit"/> -->
+                </form>
+                </div>
+            </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>
+    <script>
+        function sigupInfo(form){
+            pwd = form.password.value;
+            cpwd = form.confirmpassword.value;
+            fname = form.firstName.value;
+            lname = form.lastName.value;
+            email = form.email.value;
+            phnNo = form.phno.value;
+            addr = form.add.value;
+            if(pwd == "" || cpwd == "" || fname=="" || lname=="" || email=="" ||phnNo=="" || addr==""){
+                alert("Please enter required details!");
+            }
+            else{
+                if(pwd == cpwd){
+                    alert("Signup Successful!");
+                }
+                else{
+                    alert("Passwords didn't match fill the details again!")
+                }
+            }
+        }
+    </script>
+</html>

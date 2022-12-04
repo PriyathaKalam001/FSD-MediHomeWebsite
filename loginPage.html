@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style> 
+            body{
+                background-image: url("https://vistapointe.net/images/medicine-5.jpg");
+                background-size: cover;
+                
+            }
+            .loginBox{
+                margin-left:500px;
+                margin-right:500px;
+                margin-top:50px;
+                border-radius: 5px;
+                border-style: solid;
+            }
+            .email{
+                margin:3px;
+                padding-right:3px;
+            }
+            .remember{
+                padding-left:30px;
+            }
+            input[type=checkbox]{
+                vertical-align: middle;
+                position:relative;
+                bottom:1px;
+            }
+            .loginButton{
+                width:300px;
+                border-radius:10px;
+            }
+            .loginImgs{
+                height: 35px;
+                width:35px;
+                border-radius: 50%;
+                border-style:solid;
+                border-width:0px;
+                margin-right:5px;
+            }
+            .loginButton:hover{
+                width:350px;
+                height:50px;
+            }
+        </style>
+        
+    </head>
+<body>
+    <center>
+        <form action='/loginsubmit' method="get">
+            <div class="loginBox">
+                <h1>Login</h1>
+                <img src="http://cdn.onlinewebfonts.com/svg/img_311846.png" height="15%" width="21%"><br><br>
+                <b>Email:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" class="email"><br><br>
+                <b>Password:</b>&nbsp;<input type="password" name="password"><br><br>
+                <input type="checkbox"> Remember me
+                    <a class="remember" href="/forgotpassword"><u>Forgot Password?</u></a><br><br>
+                <button class="btn btn-primary loginButton">Login</button><br><br>
+                <p>Or Login with</p>
+                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S268585203%3A1669119099845114&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAuOPwInOj3VqLuAso1nH0p8CYyVr_YOoJ1i6L6J8hvp8TbAJhJcKj0QmPnBuQjJrwpg5w6lwQ" target="_blank"><img src="https://tse4.mm.bing.net/th?id=OIP.D6P-BO32wCApcPIIjt6p5wHaHa&pid=Api&P=0" alt="googlelogo" class="loginImgs"></a>
+                    <a href="https://www.facebook.com/login/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.zaiIl16zqTKDuhYIxeop0wHaHa&pid=Api&P=0" alt="fblogo" class="loginImgs"></a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.PSj_SQum7CH01WhmY2kFcAHaHx&pid=Api&P=0" alt="twtlogo" class="loginImgs"></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="https://tse2.mm.bing.net/th?id=OIP.DX2HSmQF05zqxROU4GTXBAHaHa&pid=Api&P=0" alt="instalogo" class="loginImgs"></a>
+                <br>
+            </div>
+        </form>
+    </center>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

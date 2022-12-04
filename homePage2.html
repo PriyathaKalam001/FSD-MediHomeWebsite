@@ -1,0 +1,105 @@
+<html lang="en">
+    <head>
+        <title>
+            MainPage
+        </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .heading {
+                padding-left: 600px;
+                padding-top: 100px;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.5rem;
+                background-image: url(https://i.pinimg.com/originals/1a/ee/5c/1aee5c344846f449350feae457ea350e.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                position: relative;
+            }
+
+            nav {
+                width: 100%;
+                height: 100px;
+                background-color: darkcyan;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            .logo{
+                height:100px;
+                width:100px;
+                border-radius:50%;
+            }
+            h1{
+                font-size:60px;
+                color:black;
+            }
+            p{
+                color:palevioletred;
+                padding-left:200px;
+            }
+            .box {
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 5px;
+                font-family: sans-serif;
+                text-align: center;
+                line-height: 1;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                max-width: 50%;
+                max-height: 50%;
+                padding: 20px 40px;
+            }
+            a:hover {
+                color: #111;
+                text-decoration: none;
+            }
+            .login-img{
+                height:70px;
+                width:70px;
+                border-radius:50%;
+            }
+            .signup-img{
+                height:50px;
+                width:50px;
+                border-radius:50%;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcu9qq4T_Y84rSt1ya08ApyOQ2UFgA5VWFuA&usqp=CAU">
+            <div class="navbar">
+                <a href="/login"><img src="https://static.thenounproject.com/png/528134-200.png" class="login-img">&nbsp;Login</a>
+                <a href="/signup"><img src="https://static.thenounproject.com/png/736755-200.png" class="signup-img"/>&nbsp;Signup</a>
+            </div>
+        </nav>
+
+        <div class="heading">
+            <div class="box">
+                <h1><b>MediHome</b></h1>
+            </div><br>
+            <p>--Medicine Heals Doubts as well as Diseases</p>
+        </div>
+    </body>
+
+</html>
