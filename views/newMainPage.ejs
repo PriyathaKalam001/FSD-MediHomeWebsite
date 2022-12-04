@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+           
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+           
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+           
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+       
+</head>
+    <style>
+    body {
+        font-size:18px;
+        background-size: cover;
+        background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjMzMy1uaW5nLTQ4LW1lZGljYWxfMi5qcGc.jpg?s=4HrbtHg0mvHvWVU-9Kl-VlkvuZo3J1A4kEU9hY9lerw);
+    }
+
+    nav {
+        width: 100%;
+        height: 100px;
+        background-color: darkcyan;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    .logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .profile {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .container {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        width: 300px;
+        height: 200px;
+        font-size: larger;
+        color: black;
+        text-align: left;
+        transition: transform .2s;
+    }
+    .box {
+         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+        border-width: 2px;
+        border-style: solid;
+        border-color: darkcyan;
+        margin: 20px;
+        height: 550px;
+        width: 450px;
+        background-color: azure;
+    }
+
+    .Medicine-Img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .addtoCartButton {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: -20px 50px;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .cost {
+        color: rgb(236, 20, 103);
+    }
+    .highlights {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    nav a:hover {
+        color: #111;
+        text-decoration:none;
+    }
+    .navbar :hover img {
+        transform: scale(1.5);
+    }
+    .logo {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .fever {
+        background-image: url(https://img.freepik.com/premium-vector/cartoon-sick-boy-with-high-temperature_70172-2000.jpg?w=360);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .diabetes {
+        background-image: url(https://img.freepik.com/free-vector/blood-glucose-monitoring-device_1308-116968.jpg?w=2000);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .headache {
+        background-image: url(https://www.narayanahealth.org/blog/wp-content/uploads/2021/10/shutterstock_1512069371.jpg);
+        /* background-position: center;
+        background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .pain {
+        background-image: url(https://img.freepik.com/premium-vector/sad-suffering-sick-intestine-pain-medicine-drug-tablet-cartoon-character-abdominal-cavity_502272-815.jpg?w=2000);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .bacteria {
+        background-image: url(https://previews.123rf.com/images/microone/microone1710/microone171000158/87466985-stop-microbes-cartoon-vector-illustration-anti-bacteria-symbol-and-protection-infection.jpg?fj=1);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .blood {
+        background-image: url(https://img.freepik.com/premium-vector/woman-measures-her-blood-pressure-with-blood-pressure-monitor_499739-594.jpg);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .allergy {
+        background-image: url(https://mpng.subpng.com/20190801/kcb/kisspng-anaphylaxis-food-allergy-anaphylactic-shock-5d42d831c4d983.5010308515646618098063.jpg);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .vomiting {
+        background-image: url(https://thumbs.dreamstime.com/b/ill-man-vomiting-cartoon-food-poisoning-61758569.jpg);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .oral {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZ0_zCsL4g6T7pG9C1_VcRa94qc0B3o2Gxw&usqp=CAU);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .cold {
+        background-image: url(https://w7.pngwing.com/pngs/635/273/png-transparent-common-cold-cartoon-illustration-baby-fever-runny-nose-cartoon-character-child-photography.png);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .menstrual {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRL7uKJnEu-tZWCkg2NW9Dtfe0oLCbyZ12qinG4Yt78HGHTR57HvGIb6oI_CiwJSMtCPs&usqp=CAU);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .cholestrol {
+        background-image: url(https://st.depositphotos.com/1526816/2231/v/600/depositphotos_22316947-stock-illustration-a-fat-boy-eating.jpg);
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: relative;
+    }
+
+    .searchBar {
+        padding-left: 20px;
+    }
+
+    .searchImg {
+        height: 20px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .but {
+        height: 30px;
+        width: 40px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .cart {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    #fit:hover {
+        width: 330px;
+        height: 230px;
+    }
+    #btnFit:hover{
+        width:300px;
+        height:45px;
+    }
+    input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        background-color: azure;
+    }
+    .logoutImg{
+        height : 50px;
+        width : 50px;
+        border-radius: 50%;
+    }
+    .logout:hover{
+        color : blue;
+        text-decoration: none;
+    }
+    .child-care{
+        height:70%;
+        width:25%;
+        background-color: gray;
+        font-size: 25px;
+    }
+    .child{
+        text-decoration:none;
+        display: inline-block;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+
+</style>
+<body>
+    <nav>
+        <img class="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcu9qq4T_Y84rSt1ya08ApyOQ2UFgA5VWFuA&usqp=CAU">
+        <center><b class="title">MediHome</b>.com</center>
+        <div class="navbar">
+            <img class="profile" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrb7XeVpElaj3yF0M2zBadpBwR1H32HQQumw&usqp=CAU">
+            <a href='/userMainPage'>Home</a>
+            <div class="dropdown-menu" aria-labelledby="profile">
+                <a class="dropdown-item" href="#">Username : <%= data.firstname %>&nbsp;<%= data.lastname %></a>
+                <a class="dropdown-item" href="#">Email : <%= data.email %></a>
+                <a class="dropdown-item" href="#">Phone Number : <%= data.phoneNumber %></a>
+                <a class="dropdown-item logout" href="/homepage">Logout&nbsp;&nbsp;&nbsp;&nbsp;<img class="logoutImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQiJs3my7SnzIOL3oCd0ayUgCXTz5Cle4ZwQ&usqp=CAU"/></a>
+            </div>
+            <!-- <a href="#">Contact Us</a> -->
+            <a href="/aboutPage">About</a>
+            <a href="/bpcalculator">BP Status</a>
+            <a href="/cartPage"><img class="cart" src="https://www.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg"></a>
+        </div>
+    </nav>
+    <br>
+    <div class="searchBar">
+        <form action="/searchItem" method="GET">
+        <input type="text" style="width:400px" name="tabletName" placeholder="Search...">
+        <button class="but"><img class="searchImg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbC7VOsYQu_JRN5MR1DsJLL5xyK44U0e4Myg&usqp=CAU"></button>
+        </form>
+    </div><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class="child-care" style="color:black;"><a class="child" href="/childSection">Child Care</a></b>
+
+
+    <div id="sectionHome">
+
+        <div class="d-flex flex-row">
+            <div class="container fever"  id = "fit" onClick="display('sectionFever')">
+                       <p><b><u>FEVER</u></b></p>
+                 </div>
+
+            <div class="container diabetes" id = "fit" onClick="display('sectionDiabetics')">
+                     <p><b><u>DIABETES</u></b></p>
+            </div>
+
+            <div class="container headache" id = "fit" onClick="display('sectionheadache')">
+                 <p><b><u>HEADACHE</u></b></p>
+            </div>
+
+            <div class="container pain" id = "fit" onClick="display('sectionPainRelief')">
+                 <p><b><u>PAIN RELEIF</u></b></p>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="d-flex flex-row">
+
+            <div class="container bacteria" id = "fit" onClick="display('sectionBacterialInfections')">
+                    <p><b><u>BACTERIAL INFECTIONS</u></b></p>
+            </div>
+
+            <div class="container blood" id = "fit" onClick="display('sectionBP')">
+                <p><b><u>BLOOD PRESSURE</u></b></p>
+            </div>
+               
+            <div class="container allergy" id = "fit" onClick="display('sectionAllergy')">
+                           <p><b><u>ALLERGY</u></b></p>
+            </div>
+
+            <div class="container vomiting" id = "fit" onClick="display('sectionVomit')">
+                      <p><b><u>VOMITING</u></b></p>
+            </div>
+        </div>
+        <br><br>
+        <div class="d-flex flex-row">
+            <div class="container oral" id = "fit" onClick="display('sectionoral')">
+                    <p><b><u>ORAL CARE</u></b></p>
+            </div>
+
+            <div class="container cold" id = "fit" onClick="display('sectionColdCough')">
+                           <p><b><u>COLD COUGH</u></b></p>
+            </div>
+
+            <div class="container menstrual" id = "fit" onClick="display('sectionMenstrual')">
+                            <p><b><u>MENSTRUAL PAIN</u></b></p>
+            </div>
+            <div class="container cholestrol" id = "fit" onClick="display('sectionHighCholestrol')">
+                <p><b><u>HIGH CHOLESTROL</u></b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- section Fever -->
+    <div id="sectionFever">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Dolo 650</h1>
+                    <img src="https://static2.medplusmart.com/products/_0911cd_/DOLO0023_L.jpg" class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Fever</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style = "color:rgb(236, 20, 103);font-weight:bold" name="cost" value="38.54"></b></p>
+                <p class="highlights"><b>Side effects : </b>an allergic reaction, which can cause a rash and swelling
+                </p>
+                <br><br>
+                <center><button name="Tabletname" value="Dolo 650" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1> Combiflam</h1>
+                    <img src="https://meds.myupchar.com/19974/combiflam-20tab.jpg" class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Pain relief ,Fever</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="36.84"></b></p>
+                <p class="highlights"><b>Side effects : </b>Vomiting</p>
+                <br><br><br>
+                <center><button name="Tabletname" value="Combiflam" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Paracin 650mg</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/801553/paracin_650mg_tablet_10_s_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Fever</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost" >Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="18.55"></b></p>
+                <p class="highlights"><b>Side effects : </b>Vomiting</p>
+                <br><br>
+                <center><button name="Tabletname" value="Paracin 650mg" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>STALPOL650mg</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1048411/stalpol_650mg_tablet_15s_490823_0_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Fever</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="74.16"></b></p>
+                <p class="highlights"><b>Side effects : </b>Vomiting</p>
+                <br><br>
+                <center><button name="Tabletname" value="STALPOL650mg" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Calpol 650mg</h1>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_240,h_240/a_ignore,w_240,h_240,c_fit,q_auto,f_auto/clpmvl3fpvnn4s3epnm6.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Pain relief,Fever</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="34.23"></b></p>
+                <p class="highlights"><b>Side effects : </b>StomachPain,Nausea,Vomiting</p>
+                <br><br>
+                <center><button name="Tabletname" value="Calpol 650mg" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>PANATOL 500</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1042865/panatol_500_tablet_10s_478852_0_0.jpg
+                        " class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Fever</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="8.16"></b></p>
+                <p class="highlights"><b>Side effects : </b>Itching</p>
+                <br><br>
+                <center><button name="Tabletname" value="PANATOL 500" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- section Diabetics -->
+    <div id="sectionDiabetics">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Metbay 1000 tablets 10's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/303088/metbay_1gm_tablet_10_s_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Type 2 diabetes</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="34.52"></b></p>
+                <p class="highlights"><b>Side effects : </b>Nausea</p>
+                <br><br>
+                <center><button name="Tabletname" value="Metbay 1000 tablets 10's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Claglid 80mg Tablet 10's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/910730/claglid_80mg_tablet_10s_0_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Diabetes</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost"><input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="55.66"></b></p>
+                <p class="highlights"><b>Side effects : </b>Constipation</p>
+                <br><br>
+                <center><button name="Tabletname" value="Claglid 80mg Tablet 10's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Endoglim M4 Tablet 15's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1004508/endoglim_m4_tablet_15s_0_1.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Diabetes</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost"><input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="144.80"></b></p>
+                <p class="highlights"><b>Side effects : </b>Headache</p>
+                <br><br>
+                <center><button name="Tabletname" value="Endoglim M4 Tablet 15's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Endoformin PG1 Tablet 10's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/387892/endoformin_pg1_tablet_10s_0_1.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Type 2 diabetes mellitus</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="86.40"></b></p>
+                <p class="highlights"><b>Side effects : </b>Stomach pain</p>
+                <br>
+                <center><button name="Tabletname" value="Endoformin PG1 Tablet 10's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1> G Formin Tablet 10'S</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/353424/g_formin_tablet_10_s_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Diabetes </p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="24.16"></b></p>
+                <p class="highlights"><b>Side effects : </b>Abnominal pain</p>
+                <br><br>
+                <center><button name="Tabletname" value="G Formin Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Istamet</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/380428/istamet_50_500mg_tablet_15s_45692_0_1.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Type II diabetes mellitus</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="114.00"></b></p>
+                <p class="highlights"><b>Side effects: </b>Hypogylcemia (low blood sugar)</p>
+                <br><br>
+                <center><button name="Tabletname" value="Istamet" class="btn btn-primary addtoCartButton" id="btnFit"> Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- //section headache  -->
+    <div id="sectionheadache">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Saridon</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/109486/saridon_tablet_10s_0_2.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Pain relief,Head ache</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="Rs.33.84"></b></p>
+                <p class="highlights"><b>Side effects : </b>Stomach pain,Nausea,skin rashes</p>
+                <br><br>
+                <center><button name="Tabletname" value="Saridon" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Rizora 10mg Tablet 4'S
+                    </h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/340100/rizora_10mg_tablet_4_s_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Migraine</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="264.00"></b></p>
+                <p class="highlights"><b>Side effects : </b> Drowsiness</p>
+                <br><br>
+                <center><button name="Tabletname" value="Rizora 10mg Tablet 4'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Tydol 50</h1>
+                    <img src=https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/bogp6iavl7gh0i3tm9vi.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Headache,Toothache</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost"><input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="141.60"></b></p>
+                <p class="highlights"><b>Side effects:</b>Dizziness,Vomiting</p>
+                <br><br>
+                <center><button name="Tabletname" value="Tydol 50" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Snapit Tablet 2'S</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/413241/snapit_tablet_2s_0_1.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Migraine</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="92.44"></b></p>
+                <p class="highlights"><b>Side effects : </b>Sleepiness</p>
+                <br><br>
+                <center><button name="Tabletname" value="Snapit Tablet 2'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Domcet Tablet 10'S</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/387702/domcet_tablet_10_s_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Migraine</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="text" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="42.44"></b></p>
+                <p class="highlights"><b>Side effects : </b>Dryness in mouth</p>
+                <br><br>
+                <center><button name="Tabletname" value="Domcet Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Grenil Tablet 10'S</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/49260/grenil_tablet_10_s_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Migraine</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="40.92"></b></p>
+                <p class="highlights"><b>Side effects : </b>Insomnia</p>
+                <br><br>
+                <center><button name="Tabletname" value="Grenil Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- section allergy-->
+    <div id="sectionAllergy">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Avil 25 Tablet</h1><br>
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/WG/XO/GA/40528257/pheniramine-maleate-tablets-1000x1000.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Allergic conditions</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="8.77"></b></p>
+                <p class="highlights"><b>Side effects : </b>Sleepiness, Dryness in mouth</p>
+                <br><br>
+                <center><button name="Tabletname" value="Avil 25 Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Gravol Tablet</h1><br>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.VVdWWZlyisz4K-0m8F6yLAHaDb&pid=Api&P=0"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Allergic conditions,Motion sickness</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="28.56"></b></p>
+                <p class="highlights"><b>Side effects : </b>Sleepiness,Dryness in mouth</p>
+                <br>
+                <center><button name="Tabletname" value="Gravol Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Betnesol Tablet</h1><br>
+                    <img src="https://www.safegenericpharmacy.com/image/cache/catalog/Products%20Images/betnesol-500x500.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Allergic conditions</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="11.28"></b></p>
+                <p class="highlights"><b>Side effects : </b>Reduction in bone density</p>
+                <br><br>
+                <center><button name="Tabletname" value="Betnesol Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+            </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>IMPECLO Cream 15gm</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1042746/impeclo_cream_15gm_472960_0_0.jpg"
+                        class="Medicine-Img" />
+                </center><br><br>
+                <p class="highlights"><b>Usage : </b>Skin infections</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="68.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>irritation</p>
+                <br><br>
+                <center><button name="Tabletname" value="IMPECLO Cream 15gm" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Hevert Germany Allergy Relief</h1>
+                    <img src="https://i0.wp.com/homeomart.net/wp-content/uploads/2017/08/hevert-allergy-relief-for-sneezing-runny-nose-watery-eyes-itchy-nose.png?fit=1000%2C500&ssl=1"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Itchy nose and throat,Allergy</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="19.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="Hevert Germany Allergy Relief"  class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>1 AL 10mg Tablet 15'S</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/803021/1_al_10mg_tablet_15_s_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Allergic rhinitis (such as nasal congestion, itchy nose, repeated sneezing and red, watery, and itchy eyes)</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="67.20"></b></p>
+                <p class="highlights"><b>Side effects : </b></p>
+                <br><br>
+                <center><button name="Tabletname" value="1 AL 10mg Tablet 15'S"  class="btn btDiarrhea, constipationn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-info" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- section vomit-->
+    <div id="sectionVomit">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Vomistop Tablet</h1><br>
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/OP/TR/KH/66751685/domperon-domperidone-tablet-1000x1000.png"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Vomiting,Nausea</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="20.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Headache,Stomach pain</p>
+                <br><br>
+                <center><button name="Tabletname" value="Vomistop Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Ondem -MD 4 Tablet</h1><br>
+                    <img src="https://5.imimg.com/data5/ZS/AJ/ZN/SELLER-11816536/ondem-md-4-500x500.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Vomiting</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="46.62"></b></p>
+                <p class="highlights"><b>Side effects : </b>Constipation,Diarrhea</p>
+                <br><br>
+                <center><button name="Tabletname" value="Ondem -MD 4 Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Periset MD Tablet</h1><br>
+                    <img src="https://i.pinimg.com/originals/b7/87/3a/b7873a2aeb541df813450cd4f8371cfc.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Vomiting</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="46.84"></b></p>
+                <p class="highlights"><b>Side effects : </b>Constipation,Diarrhea</p>
+                <br><br>
+                <center><button name="Tabletname" value="Periset MD Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Allen A30 Nausea & Vomiting Drops 30 ml</h1>
+                    <img src="https://30ch.in/wp-content/uploads/2022/06/Screenshot_2022-06-04-11-08-34-37_40deb401b9ffe8e1df2f1cc5ba480b12-940x1024.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Vomiting</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="125.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="Allen A30 Nausea & Vomiting Drops 30 ml" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>PREGNIDOXIN PLUS Tablet 30's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/961945/pregnidoxin_plus_tablet_30s_0_4.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Vomiting</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="168.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="PREGNIDOXIN PLUS Tablet 30's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>COR NVP Tablet 10's</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1055094/cor_nvp_tablet_10s_469023_0_0.jpg"
+                        class="Medicine-Img" />
+                </center><br><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Vomiting</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="80.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="COR NVP Tablet 10's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-info" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- section oral-->
+    <div id="sectionoral">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Sensodent kf foaming dental gel</h1>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/O58728/sensodent-kf-gel-125gm-2-1647364443.jpg?dim=700x0&dpr=1&q=100"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>nerve desensitization, preventing cavities</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="84.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="Sensodent kf foaming dental gel" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>SMF Solution 12ml</h1><br>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.5loB-eJQTP87b4ftT_TZxQHaHa&pid=Api&P=0"
+                        class="Medicine-Img" />
+                </center><br><br>
+                <p class="highlights"><b>Usage : </b>Oral Care</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.</b><input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="172.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="SMF Solution 12ml" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Sensoform Dental Cream 100gm</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/889040/sensoform_dental_cream_100gm_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Relief sensitivity for teeth,Remove plaque</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="102.40"></b></p>
+                <p class="highlights"><b>Side effects :</b>-</p>
+                <br>
+                <center><button name="Tabletname" value="Sensoform Dental Cream 100gm" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>G 32 Tablet 100'S</h1><br>
+                    <img src="http://www.indiaabundance.com/shopping_images/product_images/product_limg/G32_main1406640094.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>protect from Gingivitis, bleeding gums, painful gums and teeth</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="94.40"></b></p>
+                <p class="highlights"><b>Side effects :</b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="G 32 Tablet 100'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Gumaid 15ml Gumpaint Solution</h1>
+                    <img src="https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/v1600147517/cropped/gxak7ltgdmfb5yry39mf.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>prescribed for gingivitis,cleansing skin and wound areas</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="56.00"></b></p>
+                <p class="highlights"><b>Side effects :</b>Mouth and lip irritation</p>
+                <br>
+                <center><button name="Tabletname" value="Gumaid 15ml Gumpaint Solution" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Stolin Gum Astringent</h1>
+                    <img src="http://www.indiaabundance.com/shopping_images/product_images/product_limg/G32_main1406640094.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Gum problems,prevents bacteria & fungi in mouth</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="83.13"></b></p>
+                <p class="highlights"><b>Side effects :</b>Local irritation,Nausea,Stomach Upset,Skin Rash,Acute Toxicity</p><br><br>
+                <center><button name="Tabletname" value="Stolin Gum Astringent" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                </form>
+            </div>
+        </div>
+        <center><button class="btn btn-info" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- section menstrual-->
+    <div id="sectionMenstrual">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Meftal-Spas Tablet</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvK4v4HxUIanxhiM7hOvVJpsYO2XwMqmlfA&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Menstrual pain</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="40.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Blurred vision,Nervousness</p>
+                <br><br>
+                <center><button name="Tabletname" value="Meftal-Spas Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1> Primolut-N Tablet</h1>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/fpkqav7ysudvsofk71iw.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Irregular periods, Premenstrual syndrome (PMS)</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="63.46"></b></p>
+                <p class="highlights"><b>Side effects : </b> Headache, Abdominal pain, Dizziness</p>
+                <br>
+                <center><button name="Tabletname" value="Primolut-N Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Dronis 20 Tablet</h1>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuQFOjDPPc3wtOc3LsSA4aGEOzXtSbL9gDxw&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of irregular periods</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="349.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Nausea, headache, weight gain</p>
+                <br><br>
+                <center><button name="Tabletname" value="Dronis 20 Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>METITAL Tablet 15's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1033122/metital_tablet_15s_0_1.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of hormonal imbalance</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="386.50"></b></p>
+                <p class="highlights"><b>Side effects : </b>Taste changes, diarrhea, vomiting, stomach pain</p>
+                <br><br>
+                <center><button name="Tabletname" value="METITAL Tablet 15's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Metital Tablet 10'S</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/53633/metital_tablet_10s_0_1.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Polycystic ovarian syndrome, Diabetic neuropathy</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="234.25"></b></p>
+                <p class="highlights"><b>Side effects : </b>Change in taste perception, Lactic acidosis, Skin reaction
+                </p>
+                <br>
+                <center><button name="Tabletname" value="Metital Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Ibuprofen 400mg</h1>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4RMBgnjBU3aFupIkhTgZGtc5K95nvJGolA&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of period pain</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="100.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Allergic reactions, Nausea or vomiting</p>
+                <br><br>
+                <center><button name="Tabletname" value="Ibuprofen 400mg" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- section cold cough-->
+    <div id="sectionColdCough">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>L-Hist Mont Tablet</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBgmJErYTwabClf74-8eHskEmtRLGBDa1DGQ&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Sneezing and runny nose</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="116.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Fatigue,Skin rash</p>
+                <br><br>
+                <center><button name="Tabletname" value="L-Hist Mont Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+           
+                </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1> Cheston Cold Tablet</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxve6Cbn4mlB1Z3h5WyE1vjtfRhTl250lLQ&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Common Cold</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="31.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Nausea, Vomiting</p>
+                <br><br>
+                <center><button name="Tabletname" value="Cheston Cold Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Okacet Cold Tablet</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6nV5oe2_ccsz4kSMws50RM1MThJLW6b3Ag&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of Common Cold</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="26.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Headache, Fatigue</p>
+                <br><br>
+                <center><button name="Tabletname" value="Okacet Cold Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Solvin Cold Tablet</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6fqtKKIiLyRdT9rhvcIf6_Keev2KpQ1BMDm0bOPhtCgvh0IHZdIlcf-Lzv7GI-6NWl4&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Treatment of dry cough</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="59.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>Upset stomach, sleepiness</p>
+                <br><br>
+                <center><button name="Tabletname" value="Solvin Cold Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Sinarest New Tablet 10'S</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DZJ9hioX2YYb5fY8dkEYgVafjjzd5thoXQ&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Cold and Cough</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b>Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="91.80"></b></p>
+                <p class="highlights"><b>Side effects : </b>Nausea, Nervousness, Drowsiness</p>
+                <br><br>
+                <center><button name="Tabletname" value="Sinarest New Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Allercet Cold Tablet 10'S</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT43fvpig2CkVGlX-daMD1-kuEV6O4_ol_Ztw&usqp=CAU"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b>Usage : </b>Cold and Cough</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b>Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="77.00"></b></p>
+                <p class="highlights"><b>Side effects : </b>-</p>
+                <br><br>
+                <center><button name="Tabletname" value="Allercet Cold Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!--section Pain relief-->
+    <div id="sectionPainRelief">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Buscogast PlusTablets 10's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/920046/buscogast_plus_hyoscine_butylbromide_paracetamol_tablets_10s_0_0.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>abdominal pain/cramps</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="66.38"></b></p>
+                <p class="highlights"><b> Side effects : </b>constipation</p>
+                <br><br>
+                <center><button name="Tabletname" value="Buscogast PlusTablets 10's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1> Xircox SP Tablet</h1><br>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/grzs5su3qatfiyuqm2ub.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Pain relief</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="88.00"></b></p>
+                <p class="highlights"><b> Side effects : </b>Diarrhea, Stomach pain</p>
+                <br><br>
+                <center><button name="Tabletname" value="Xircox SP Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Evion LC</h1><br>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/qh0gmjsmtxwgkify7rh2.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Treatment of Muscle cramps</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="41.44"></b></p>
+                <p class="highlights"><b> Side effects : </b>No common side effects seen</p>
+                <br><br>
+                <center><button name="Tabletname" value="Evion LC" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Hifenac-MR Tablet</h1><br>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/cropped/ubsehzogi90hcjivru5z.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Muscular pain</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="68.00"></b></p>
+                <p class="highlights"><b> Side effects : </b>Stomach pain</p>
+                <br><br>
+                <center><button name="Tabletname" value="Hifenac-MR Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Doloral Tablet 10'S</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/369224/doloral_tablet_10s_0_0.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Pain Relief</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="52.80"></b></p>
+                <p class="highlights"><b> Side effects : </b>Headache</p>
+                <br><br>
+                <center><button name="Tabletname" value="Doloral Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Dolowin Plus Tablet 10'S</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/388886/dolowin_plus_tablet_10_s_0.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Pain Relief</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="60.00"></b></p>
+                <p class="highlights"><b> Side effects : </b>Heartburn</p>
+                <br><br>
+                <center><button name="Tabletname" value="Dolowin Plus Tablet 10'S" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!--section bacterial infections-->
+    <div id="sectionBacterialInfections">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>PREVODINE Ointment</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1040014/prevodine_ointment_125gm_411726_0_0.jpg"
+                        class="Medicine-Img" />
+                </center><br>
+                <p class="highlights"><b> Usage : </b>Wound infection</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="164.00"></b></p>
+                <p class="highlights"><b> Side effects : </b>Burning</p>
+                <br><br>
+                <center><button name="Tabletname" value="PREVODINE Ointment" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Augmentin 625 Duo Tablet</h1>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_120,h_120/a_ignore,w_120,h_120,c_fit,q_auto,f_auto/m679ee9wemhxx03whuay.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Bacterial infections</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="178.74"></b></p>
+                <p class="highlights"><b> Side effects : </b>Vomiting,Nausea</p>
+                <br><br>
+                <center><button name="Tabletname" value="Augmentin 625 Duo Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Blumox-Plus</h1><br>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/sb8fmujn5bi4rapnsrnh.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Bacterial infections</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="52.18"></b></p>
+                <p class="highlights"><b> Side effects : </b>Rash,Vomiting,diarrhea, indigestion</p>
+                <br><br>
+                <center><button name="Tabletname" value="Blumox-Plus" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Azithral 500 Tablet</h1><br>
+                    <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/kqkouvaqejbyk47dvjfu.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Bacterial infections</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="105.60"></b></p>
+                <p class="highlights"><b> Side effects : </b>Vomiting</p>
+                <br><br>
+                <center><button name="Tabletname" value="Azithral 500 Tablet" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>ENDAR Tablet 10's</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1027528/endar_tablet_10s_0_0.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Bacterial infections</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="64.00"></b></p>
+                <p class="highlights"><b> Side effects : </b>loss of appetite</p>
+                <br><br>
+                <center><button name="Tabletname" value="ENDAR Tablet 10's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>3A 500 Tablet 5's</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1050088/3a_500_tablet_5s_498926_1_0.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Bacterial infections</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="107.55"></b></p>
+                <p class="highlights"><b> Side effects : </b>Abdominal pain</p>
+                <br><br>
+                <center><button name="Tabletname" value="3A 500 Tablet 5's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!--section BP-->
+    <div id="sectionBP">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Moduretic</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqExQXuO1_Dc17QdgEAwUof5w3ZX_yKaao4g&usqp=CAU"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>High Blood Pressure</p>
+                <form method='GET' action='addtoCart'>
+                    <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="105.00"></b></p>
+                <p class="highlights"><b> Side effects : </b>stomach/abdominal pain</p>
+                <br><br>
+                <center><button name="Tabletname" value="Moduretic" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>CILNIPINE 10 Tablet 15's</h1><br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1033971/cilnipine_10_tablet_15s_396804_0_1.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Hypertension</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="96.95"></b></p>
+                <p class="highlights"><b> Side effects : </b>Swollen ankles</p>
+                <br><br>
+                <center><button name="Tabletname" value="CILNIPINE 10 Tablet 15's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Aldactone</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3UhOl05TA4VapR-r_uyh4ra3w9vJgl_OIaA&usqp=CAU"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>High Blood Pressure</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="92.18"></b></p>
+                <p class="highlights"><b> Side effects : </b>lightheadedness</p>
+                <br><br>
+                <center><button name="Tabletname" value="Aldactone" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>captopril</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JUUuypG4-ICzVADxYllFhUR0uUzP3QlA9A&usqp=CAU"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Hypertension</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="117.60"></b></p>
+                <p class="highlights"><b> Side effects : </b>Fast heartbeat</p>
+                <br><br>
+                <center><button name="Tabletname" value="captopril" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Amlodipine</h1><br>
+                    <img src="https://cf-s3.petcoach.co/uploads/medication/3/1504713916-amlodipine-1088x640.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>Low Blood Pressure</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="94.70"></b></p>
+                <p class="highlights"><b> Side effects : </b>Upset stomach</p>
+                <br><br>
+                <center><button name="Tabletname" value="Amlodipine"  class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Nisoldipine</h1><br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJh5m-QX4yNiGqRB5UWCYEgQdZ02xAhJ6_Cw&usqp=CAU"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>High Blood Pressure</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="142.55"></b></p>
+                <p class="highlights"><b> Side effects : </b>Excessive tiredness</p>
+                <br><br>
+                <center><button name="Tabletname" value="Nisoldipine" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button></center>
+                    </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+
+    <!-- section High cholestrol-->
+    <div id="sectionHighCholestrol">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Aclizac 75mg Tablet 10's</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/896950/aclizac_75mg_tablet_10s_0_0.jpg"
+                        class="Medicine-Img" /><br><br><br><br>
+                </center>
+                <p class="highlights"><b> Usage : </b>Prevent blood clots,-stent restenosis</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="67.40"></b></p>
+                <p class="highlights"><b> Side effects : </b>Nosebleed,Abdominal pain,Indigestion</p>
+                <button name="Tabletname" value="Aclizac 75mg Tablet 10's" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>ACMEROSE F Tablet 10’s </h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/926254/acmerose_f_tablet_10s_0_0.jpg" class="Medicine-Img" />
+                </center><br><br><br>
+                <p class="highlights"><b> Usage : </b>Prevent the risk of heart attack, stroke or atherosclerosis</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="38.40"></b></p>
+                <p class="highlights"><b> Side effects : </b>Headache, dizziness,Feeling weak</p>
+                <button name="Tabletname" value="ACMEROSE F Tablet 10’s" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Rosloy f 20/160 tablet 15’s</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/1005497/rosloy_f_20_160_tablet_15s_0_0.jpg"
+                        class="Medicine-Img" /><br><br>
+                </center>
+                <p class="highlights"><b> Usage : </b>Treat high blood cholesterol levels</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="420.00"></b></p>
+                <p class="highlights"><b> Side effects : </b>Protein loss in urine,Increased liver enzyme levels</p>
+                <button name="Tabletname" value="Rosloy f 20/160 tablet 15’s" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button>
+                    </form>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Adipostat 10 tablet 10’s</h1>
+                    <br>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/971090/adipostat_10_tablet_10s_488972_0_0.jpg"
+                        class="Medicine-Img" /><br><br>
+                </center>
+                <br>
+                <p class="highlights"><b> Usage : </b>Treats high blood cholesterol levels</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="102.96"></b></p>
+                <p class="highlights"><b> Side effects : </b>Stomach pain, constipation,Muscle pain</p>
+                <button name="Tabletname" value="Adipostat 10 tablet 10’s" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>fenocor 105mg tablet 10’s</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/31355/fenocor_105mg_tablet_10_s_0.jpg"
+                        class="Medicine-Img" /><br><br>
+                </center>
+                <p class="highlights"><b> Usage : </b>Hypercholesterolemia,Hypertriglyceridemia</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="208.73"></b></p>
+                <p class="highlights"><b> Side effects : </b>Jaundice,Chest pain</p>
+                <button name="Tabletname" value="fenocor 105mg tablet 10’s" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button>
+                    </form>
+            </div>
+            <div class="justify-content-center box">
+                <center>
+                    <h1>Britorva CV 10mg capsule 10’s</h1>
+                    <img src="https://www.netmeds.com/images/product-v1/600x600/904580/britorva_cv_10mg_capsule_10s_461172_0_1.jpg"
+                        class="Medicine-Img" />
+                </center>
+                <p class="highlights"><b> Usage : </b>To reduce elevated cholesterol and triglyceride levels</p>
+                <form method='GET' action='addtoCart'>
+                <p class="highlights"><b> Cost : </b><b class="cost">Rs.<input type="number" style="color:rgb(236, 20, 103);font-weight:bold" name="cost" value="97.60"></b></p>
+                <p class="highlights"><b> Side effects : </b>Inflammation of nasal passages, pain in the throat,nosebleed</p>
+                <button name="Tabletname" value="Britorva CV 10mg capsule 10’s" class="btn btn-primary addtoCartButton" id="btnFit">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        <center><button class="btn btn-dark" onclick="display('sectionHome')">Back</button></center>
+    </div>
+     
+    <script type="text/javascript"
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+       
+</body>
+</html>
